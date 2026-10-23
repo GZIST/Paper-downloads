@@ -1,2 +1,35 @@
-# Paper-downloads
-Paper Windows downloads and user documentation
+# Paper
+
+Paper 是用于论文、电赛设计报告及其他研究报告的本地写作工具。当前为 **0.1.1 公共预览版**。
+
+[下载 Windows x64 安装包（Paper-Setup-0.1.1-x64.exe）](https://github.com/GZIST/Paper-downloads/releases/download/v0.1.1/Paper-Setup-0.1.1-x64.exe)
+
+下载后双击安装包，再从开始菜单或桌面打开 Paper。不需要 Node.js、VS Code 等开发工具。本仓库只提供安装包与使用说明；Source code 压缩包只包含说明，请选择上面的 .exe 文件。
+
+## 当前可以使用
+
+- 创建毕业论文、电赛报告或自定义章节模板。
+- 编辑正文、标题、列表、表格、LaTeX 公式和本地图片。
+- 自动保存到本机，撤销重做，创建和恢复文档快照。
+- 使用指定的 2027 届毕业论文与 2026 广东电赛报告模板，支持论文封面和正文结构；电赛摘要提示不超过 500 字。
+- 使用无需扩展的 Paper 内置浏览器联合检索五来源，回收可识别的题录和公开摘要，集中审阅后保存在项目文献库；站点验证及未适配页面会明确提示。
+- 配置兼容 API，生成大纲或基于已核验文献证据的草稿，预览确认后再插入正文。API 由用户自行配置。
+- 核对已写参考文献的实际题录，保留字段差异、来源及未能核查的原因。
+
+## 正在开发
+
+从题目开始的 AI 自主检索后整篇写作尚在接入；五站结果识别和核查尚未全覆盖，实际模型服务端到端联调仍待完成。DOCX/PDF 正式导出、云同步和自动更新尚未提供。电赛格式清单用于辅助核对，不会自动判定最终排版合规。可选日常浏览器桥接仍限源码开发环境，安装版使用内置浏览器。
+
+## 数据与升级
+
+项目保存在当前 Windows 用户的 `%APPDATA%\paper-workbench\projects`。安装包不包含任何人的论文。各电脑分别保存数据；备份时先关闭 Paper，再复制整个 projects 文件夹，其中包含正文、图片、快照和自定义模板。
+
+升级前请备份项目。当前预览包面向 Windows x64，尚未在第二台独立电脑完成安装和卸载验证。
+
+## 预览版说明
+
+安装包未做代码签名，Windows 可能显示发布者未知或安全提示。可核对发布记录和 SHA-256 校验文件；不要为安装应用而关闭系统安全防护。
+
+[本版本与 SHA256SUMS.txt](https://github.com/GZIST/Paper-downloads/releases/tag/v0.1.1) · [数据说明](PRIVACY.md) · [提交问题](https://github.com/GZIST/Paper-downloads/issues)
+
+反馈时提供 Paper 版本、Windows 版本和复现步骤即可。
